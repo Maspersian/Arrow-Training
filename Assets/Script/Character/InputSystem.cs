@@ -28,10 +28,10 @@ public class InputSystem : MonoBehaviour
     }
 
     // Update is called once per frame
-    //void Update()
-    //{
-    //    moveScript.AnimateCharacter(Input.GetAxis(input.forwardInput), Input.GetAxis(input.strafeInput));
-    //    moveScript.SprintCharacter(Input.GetButton(input.sprintInput));
-    //}
+    void Update()
+    {
+        moveScript.AnimateCharacter(Input.GetAxis(input.forwardInput), Input.GetAxis(input.strafeInput));
+        moveScript.SprintCharacter(Input.GetButton(input.sprintInput));
+    }
 }
 
